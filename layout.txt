@@ -1,0 +1,14 @@
+dbs:
+1.faculties ->login (email password)
+2.extra info(sem,sec,subs,modulecordin1-n-2,) \\ has one to one relation with faculties
+3.CO's
+4.PO's \\ has one to many relation with co's
+5.gaps \\ has one to one relation with PO's && one to many with ACtionplan
+6.action plan
+***/\/\/\/\*****
+Student centric activity
+pbl- 1 to 1 with extra info 
+student feedback po's
+
+respective models for all tables with field validations
+
