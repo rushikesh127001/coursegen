@@ -10,29 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_05_004558) do
+ActiveRecord::Schema.define(version: 2019_09_08_025957) do
 
-  create_table "cos", force: :cascade do |t|
-    t.string "co1"
-    t.string "co2"
-    t.string "co3"
-    t.string "co4"
-    t.string "co5"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "extrainfos", force: :cascade do |t|
+  create_table "courses", force: :cascade do |t|
+    t.string "coursecode"
+    t.string "coursetitle"
     t.integer "semester"
     t.string "section"
     t.string "subject"
     t.string "modulecoordinator1"
     t.string "modulecoordinator2"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "pos", force: :cascade do |t|
+    t.string "co1"
+    t.string "co2"
+    t.string "co3"
+    t.string "co4"
+    t.string "co5"
     t.integer "po1"
     t.integer "po2"
     t.integer "po3"
