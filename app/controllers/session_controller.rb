@@ -1,5 +1,6 @@
 class SessionController < ApplicationController
     before_action :already_signed_in, only:[:new,:create]
+    helper_method :all
 
     def new
         
