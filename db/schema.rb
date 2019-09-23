@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_08_043927) do
+ActiveRecord::Schema.define(version: 2019_09_23_102451) do
 
   create_table "courses", force: :cascade do |t|
     t.string "coursecode"
@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 2019_09_08_043927) do
     t.integer "pso2"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "program"
   end
 
   create_table "users", force: :cascade do |t|
@@ -48,6 +49,7 @@ ActiveRecord::Schema.define(version: 2019_09_08_043927) do
     t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "password_digest"
   end
 
 end
