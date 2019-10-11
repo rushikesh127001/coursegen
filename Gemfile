@@ -7,6 +7,9 @@ ruby '2.6.3'
 gem 'rails', '~> 5.2.3'
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.3.1'
+
+gem 'mina', require: false
+gem 'mina-puma', require: false,  github: 'untitledkingdom/mina-puma'
 gem 'will_paginate', '~>3.1.5'
 gem 'bootstrap-will_paginate', '~>1.0.0'
 gem 'yarn', '~> 0.1.1'

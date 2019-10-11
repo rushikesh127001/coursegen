@@ -1,5 +1,5 @@
 class SessionController < ApplicationController
-    before_action :already_signed_in, only:[:new,:create]
+  #  before_action :already_signed_in, only:[:create]
     helper_method :all
 
     def new
@@ -12,7 +12,7 @@ class SessionController < ApplicationController
         if user && user.authenticate(params[:session][:password])
             session[:user_id]=user.id
             flash[:success]="You Have Successfully Logged In "
-            redirect_to course_path
+            redirect_to course_index_path
         else
             flash.now[:alert]="Wrong Credentials Trty Again"
             render 'new'

@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   post 'login',to: 'session#create'
   delete 'logout', to: 'session#destroy'
   
-  resources :courses, only: [:new, :create, :show, :index] do
+  resources :course, only: [:new, :create, :show, :index] do
     resources :steps, only: [:show, :update], controller: 'course/steps'
   end
 end
